@@ -379,7 +379,57 @@ body {
 
 
 
+/* Mission section */
+.mission{
+    padding: 80px 0;
+    background: white;
+}
 
+.mission-content {
+    text-align: center;
+}
+
+.mission h2{
+    font-size: 2.5rem;
+    color: #3d4449;
+    margin-bottom: 2rem;
+}
+
+.mission > .container > .mission-content > p{
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+ .mission-points{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+ }
+
+ .point{
+    background: #f5f6f7;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: trasform 0.3s ease;
+ }
+
+ .point:hover{
+    transform: translateY(-5px);
+ }
+
+ .pooint h3{
+    font-size: 1.3rem;
+    color: #3d4449;
+    margin-bottom: 1rem;
+}
+
+.point p{
+    color: #7f8c8d;
+    line-height: 1.6;
+}
 
 
 /* Footer Styles */
