@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
-    <div style="position: sticky; top: 0; left: 0;">
+
+<!-- Navigation -->
         <input type="checkbox" id="menu-toggle">
 
         <nav class="nav-container">
             <div class="nav-header">
                 <a href="index.html" class="logo">
-                    <img src="style/icon/fantastic-4-logo.png" alt="TimbangKatotohanan Logo" >
+                    <img src="style/icon/fantastic-4-logo.png" alt="TimbangKatotohanan Logo">
                     <strong>TimbangKatotohanan</strong>
                 </a>
-                <label for="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+                
+                <div class="nav-controls">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button class="search-button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <label for="menu-toggle" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
             </div>
         </nav>
 
@@ -28,6 +42,16 @@
         <div class="nav-menu">
             <div class="menu-content">
                 <h2 class="menu-title">Menu</h2>
+                
+                <div class="menu-search-container">
+                    <input type="text" class="menu-search-input" placeholder="Search">
+                    <button class="menu-search-button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
                 <ul class="menu-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -72,8 +96,131 @@
 
     <!-- Content Here -->
 
-    <!--  -->
-    <!--  -->
+    <!-- About us (Word only) -->
+    <!-- News Blog -->
+    <section class="latest-news" id="latest">
+        <div class="container">
+            <h2>Latest News & Fact Checks</h2>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="" alt="featured news">
+                        <span class="news-badge featured-badge">Featured</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Fact Check</span>
+                        <h3>isicing elit. Excepturi, quos? Dolores quisquam veniam quam reiciendis molestias accusamus vitae nisi veritatis.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                        <a href="#" class="read-more">Read Full Article</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="" alt="Politics News">
+                        <span class="news-badge politics-badge">Politics</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Analysis</span>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptates?<p>
+                        <div class="news-meta">
+                            <span class="author">By Juan dela Cruz</span>
+                            <span class="date">September 3, 2025</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="" alt="Health News">
+                        <span class="news-badge health-badge">Health</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Fact Check</span>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptates?<p>
+                        <div class="news-meta">
+                            <span class="author">By Juan dela Cruz</span>
+                            <span class="date">September 3, 2025</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="" alt="technology News">
+                        <span class="news-badge health-badge">Technology</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Guide</span>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptates?<p>
+                        <div class="news-meta">
+                            <span class="author">By Juan dela Cruz</span>
+                            <span class="date">September 3, 2025</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="" alt="Social Media News">
+                        <span class="news-badge social-badge">Social Media</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Investigation</span>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptates?<p>
+                        <div class="news-meta">
+                            <span class="author">By Juan dela Cruz</span>
+                            <span class="date">September 3, 2025</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article> 
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="" alt="Education News">
+                        <span class="news-badge education-badge">Education</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Resource</span>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptates?<p>
+                        <div class="news-meta">
+                            <span class="author">By Juan dela Cruz</span>
+                            <span class="date">September 3, 2025</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Campaign  -->
+
     <!-- Mission -->
     <section class="mission" id="mission">
         <div class="container">
@@ -98,9 +245,6 @@
             </div>
         </div>
     </section>
-
-
-
 
 
     <!-- Footer -->

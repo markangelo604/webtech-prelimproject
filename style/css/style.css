@@ -11,7 +11,6 @@ body {
     color: #3d4449;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,6 +23,7 @@ body {
 }
 
 .nav-container {
+    position: fixed;
     width: 100%;
     z-index: 10000;
     background: #f5f6f7;
@@ -34,14 +34,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-bottom: 3px solid #f56a6a;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
-    gap: 8px;              /* space between image and text */
+    gap: 8px;
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 700;
@@ -49,20 +49,85 @@ body {
 }
 
 .logo img {
-    height: 80px;          /* adjust size */
+    height: 75px;
     width: auto;
     display: block;
 }
 
-.logo strong{
+.logo strong {
     color: #f56a6a;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
+/* Navigation Controls Container */
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
+/* Header Search Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #e1e5e9;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.search-container:hover {
+    border-color: #f56a6a;
+    box-shadow: 0 0 10px rgba(245, 106, 106, 0.2);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #3d4449;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #9fa3a6;
+}
+
+.search-input:focus {
+    width: 250px;
+}
+
+.search-button {
+    background: #f56a6a;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background: #f45c5c;
+    transform: scale(1.05);
+}
+
+.search-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Hamburger Menu */
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -140,6 +205,60 @@ body {
 
 .menu-content {
     padding: 2rem;
+}
+
+/* Menu Search Styles */
+.menu-search-container {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #e1e5e9;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.menu-search-container:hover {
+    border-color: #f56a6a;
+    box-shadow: 0 0 10px rgba(245, 106, 106, 0.2);
+}
+
+.menu-search-input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #3d4449;
+    flex: 1;
+}
+
+.menu-search-input::placeholder {
+    color: #9fa3a6;
+}
+
+.menu-search-button {
+    background: #f56a6a;
+    border: none;
+    padding: 10px 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-search-button:hover {
+    background: #f45c5c;
+    transform: scale(1.05);
+}
+
+.menu-search-button svg {
+    width: 16px;
+    height: 16px;
 }
 
 .menu-title {
@@ -311,7 +430,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 120px 20px;
-    min-height: 500px;
+    min-height: 725px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,6 +503,152 @@ body {
 
 /* Other styles */
 
+/* News Blog */
+.latest-news{
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.latest-news h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3d4449;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.latest-news h2::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #f56a6a;
+}
+
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.news-card{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.news-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.news-card.featured{
+    grid-column: span 2;
+}
+
+.news-image{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.featured .news-image{
+    height: 300px;
+}
+
+.news-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover .news-image img{
+    transform: scale(1.05);
+}
+
+.news-badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.featured-badge { background: #f56a6a; }
+.politics-badge { background: #3498db; }
+.health-badge { background: #2ecc71; }
+.tech-badge { background: #9b59b6; }
+.social-badge { background: #e67e22; }
+.education-badge { background: #34495e; }
+
+.news-content{
+    padding: 1.5rem;
+}
+
+.news-category{
+    color: #f56a6a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-content h3{
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.4;
+}
+
+.featured .news-content h3{
+    font-size: 1.6rem;
+}
+
+.news-content h3{
+    font-size: 1.6rem;
+}
+
+.news-content p{
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.news-meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #95a5a6;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid #ecf0f1;
+}
+
+.read-more{
+    color: #f56a6a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.read-more:hover{
+    color: #e55555;
+    text-decoration: underline;
+}
 
 
 /* Mission section */
