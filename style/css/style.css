@@ -11,6 +11,13 @@ body {
     color: #3d4449;
 }
 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 #menu-toggle,
 .submenu-checkbox {
     display: none;
