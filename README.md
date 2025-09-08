@@ -25,7 +25,7 @@ Our project is a website dedicated to raising awareness about **misinformation a
 ## 🚀 Getting Started  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/markangelo604/webtech-prelimproject.git```
+   git clone https://github.com/markangelo604/webtech-prelimproject.git
 2. Open `index.html` in your browser.
 
 ## 📜 License
