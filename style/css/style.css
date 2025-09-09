@@ -58,9 +58,6 @@ body {
     color: #f56a6a;
 }
 
-.logo:hover {
-    transform: scale(1.1);
-}
 
 /* Navigation Controls Container */
 .nav-controls {
