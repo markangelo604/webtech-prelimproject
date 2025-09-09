@@ -499,6 +499,69 @@ body {
 
 
 /* Other styles */
+/* ABout Us */
+.about-us{
+    background:white;
+    padding: 100px 0 80px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.about-header{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.about-header h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3d4449;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-column{
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-column p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #3d4449;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about-column p:last-child{
+    margin-bottom: 0;
+}
+
+.about-column{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-column:hover{
+    transform: translate(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
 
 /* News Blog */
 .latest-news{
