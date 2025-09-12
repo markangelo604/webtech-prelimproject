@@ -459,6 +459,9 @@ p {
 .hero-content {
     max-width: 1000px;
 }
+.hero-content p {
+    text-align: center;
+}
 
 .hero h1 {
     font-size: 3.5rem;
