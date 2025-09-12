@@ -10,6 +10,10 @@ body {
     color: #3d4449;
 }
 
+p {
+    text-align: justify;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
