@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - The Real Feed</title>
+    <link rel="stylesheet" href="style/css/learn-more.css">
+    <link rel="icon" type="image/png" href="style/icon/fantastic-4-logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <input type="checkbox" id="menu-toggle">
+    <nav class="nav-container">
+        <div class="nav-header">
+            <a href="index.html" class="logo">
+                <img src="style/icon/fantastic-4-logo.png" alt="The Real Feed Logo">
+                <strong>The Real Feed</strong>
+            </a>
+            
+            <div class="nav-controls">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-overlay"></div>
+    <div class="nav-menu">
+        <div class="menu-content">
+            <h2 class="menu-title">Menu</h2>
+            
+            <div class="menu-search-container">
+                <input type="text" class="menu-search-input" placeholder="Search">
+                <button class="menu-search-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Awareness</a></li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="submenu-1" class="submenu-checkbox">
+                    <label for="submenu-1" class="submenu-toggle">Learn More</label>
+                    <ul class="submenu">
+                        <li><a href="learn-more.html#misinformation-disinformation">Misinformation vs Disinformation</a></li>
+                        <li><a href="learn-more.html#real-world-examples">Real-World Examples</a></li>
+                        <li><a href="learn-more.html#effects-on-society">Effects on Society</a></li>
+                        <li><a href="learn-more.html#how-to-spot-prevent">How to Spot & Prevent</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="submenu-2" class="submenu-checkbox">
+                    <label for="submenu-2" class="submenu-toggle">Community</label>
+                    <ul class="submenu">
+                        <li><a href="latest-news.html">Latest News</a></li>
+                        <li><a href="#">Campaigns</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of nav -->
+
+    <!-- Hero Section -->
+    <section class="learn-hero">
+        <div class="container">
+            <hgroup class="hero-content">
+                <h1>Understanding Information in the Digital Age</h1>
+                <p>A comprehensive guide to identifying, understanding, and combating misinformation and disinformation in our interconnected world.</p>
+            </hgroup>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="table-of-contents">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="toc-grid">
+                <a href="#misinformation-disinformation" class="toc-item">
+                    <h3>Misinformation vs Disinformation</h3>
+                    <p>Understanding the key differences and characteristics</p>
+                </a>
+                <a href="#real-world-examples" class="toc-item">
+                    <h3>Real-World Examples</h3>
+                    <p>Case studies and documented instances</p>
+                </a>
+                <a href="#effects-on-society" class="toc-item">
+                    <h3>Effects on Society</h3>
+                    <p>Impact on democracy, health, and social cohesion</p>
+                </a>
+                <a href="#how-to-spot-prevent" class="toc-item">
+                    <h3>How to Spot & Prevent</h3>
+                    <p>Practical strategies and tools for verification</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="learn-content">
+        <div class="container">
+            <!-- Section 1: Misinformation vs Disinformation -->
+            <section id="misinformation-disinformation" class="content-section">
+                <h2>Misinformation vs Disinformation</h2>
+                <p class="section-intro">While both terms refer to false or misleading information, understanding their distinctions is crucial for developing effective strategies to combat them.</p>
+                
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Misinformation</th>
+                                <th>Disinformation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Intent</strong></td>
+                                <td>Unintentional spreading of false information</td>
+                                <td>Deliberate creation and distribution of false information</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Source Awareness</strong></td>
+                                <td>Spreader believes the information is true</td>
+                                <td>Creator knows the information is false</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Motivation</strong></td>
+                                <td>Desire to help, inform, or warn others</td>
+                                <td>Political gain, financial profit, or social manipulation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Spread Pattern</strong></td>
+                                <td>Often viral through social networks</td>
+                                <td>Strategic and targeted distribution</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Correction Response</strong></td>
+                                <td>Usually receptive to factual corrections</td>
+                                <td>Resistant to correction, may double down</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="key-concepts">
+                    <h3>Key Characteristics</h3>
+                    <div class="concepts-grid">
+                        <div class="concept-card misinformation">
+                            <h4>Misinformation Traits</h4>
+                            <ul>
+                                <li>Often contains emotional appeal</li>
+                                <li>Shared by well-meaning individuals</li>
+                                <li>May be based on outdated information</li>
+                                <li>Can be corrected through education</li>
+                                <li>Usually lacks sophisticated production</li>
+                            </ul>
+                        </div>
+                        <div class="concept-card disinformation">
+                            <h4>Disinformation Traits</h4>
+                            <ul>
+                                <li>Professionally crafted and polished</li>
+                                <li>Designed to exploit existing divisions</li>
+                                <li>Often mimics legitimate news sources</li>
+                                <li>Uses psychological manipulation techniques</li>
+                                <li>Frequently targets specific demographics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Real-World Examples -->
+            <section id="real-world-examples" class="content-section">
+                <h2>Real-World Examples</h2>
+                <p class="section-intro">Examining documented cases helps us understand how false information spreads and impacts communities worldwide.</p>
+
+                <div class="examples-container">
+                    <div class="example-category">
+                        <h3>Health Misinformation</h3>
+                        <table class="examples-table">
+                            <thead>
+                                <tr>
+                                    <th>Example</th>
+                                    <th>Type</th>
+                                    <th>Impact</th>
+                                    <th>Response</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://apnews.com/article/tesla-miracle-cure-biohealers-medbeds-covid-tiktok-1a790089931d601199c5a07331b7e42b?utm_source=chatgpt.com" target="_blank">COVID-19 "Miracle Cures"</a></td>
+                                    <td>Misinformation</td>
+                                    <td>People using harmful substances; delayed proper medical treatment</td>
+                                    <td><a href="https://www.mdpi.com/2076-0760/12/6/320?utm_source=chatgpt.com" target="_blank">WHO & health agency fact-checking initiatives</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://en.wikipedia.org/wiki/MMR_vaccine_and_autism?utm_source=chatgpt.com" target="_blank">Vaccine–Autism Link</a></td>
+                                    <td>Disinformation</td>
+                                    <td>Reduced vaccination rates; outbreaks of preventable diseases</td>
+                                    <td><a href="https://en.wikipedia.org/wiki/Lancet_MMR_autism_fraud?utm_source=chatgpt.com" target="_blank">Retraction of Wakefield study, scientific consensus campaigns</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.bbc.com/news/technology-51742646?utm_source=chatgpt.com" target="_blank">5G Health Fears</a></td>
+                                    <td>Misinformation</td>
+                                    <td>Infrastructure vandalism, public health anxiety</td>
+                                    <td><a href="https://www.who.int/news-room/questions-and-answers/item/radiation-5g-mobile-networks-and-health?utm_source=chatgpt.com" target="_blank">WHO educational outreach</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="example-category">
+                        <h3>Political Disinformation</h3>
+                        <table class="examples-table">
+                            <thead>
+                                <tr>
+                                    <th>Example</th>
+                                    <th>Region</th>
+                                    <th>Method</th>
+                                    <th>Outcome</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.independent.co.uk/news/uk/politics/boris-johnson-350m-brexit-nhs-misled-uk-statistics-authority-the-telegraph-sir-david-norgrove-amber-rudd-a7951711.html?utm_source=chatgpt.com" target="_blank">Brexit £350m NHS Claim</a></td>
+                                    <td>United Kingdom</td>
+                                    <td>Misleading campaign adverts & statistics</td>
+                                    <td>Influenced Brexit referendum results</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.bbc.com/news/technology-39853271?utm_source=chatgpt.com" target="_blank">2016 US Election Interference</a></td>
+                                    <td>United States</td>
+                                    <td>Bot networks, fake news websites</td>
+                                    <td>Undermined electoral confidence</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.rappler.com/philippines/fake-accounts-drove-praise-rodrigo-duterte-target-2025-elections/?utm_source=chatgpt.com" target="_blank">Philippine Election Disinformation</a></td>
+                                    <td>Philippines</td>
+                                    <td>Coordinated inauthentic social media behavior</td>
+                                    <td>Shaped public opinion & political narratives</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="case-study">
+                        <h3>Case Study: The "Pizzagate" Conspiracy</h3>
+                        <div class="case-details">
+                            <div class="case-timeline">
+                                <h4>Timeline of Events</h4>
+                                <table class="timeline-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Event</th>
+                                            <th>Platform</th>
+                                            <th>Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>October 2016</td>
+                                            <td><a href="https://www.bbc.com/news/blogs-trending-38156985?utm_source=chatgpt.com" target="_blank">Initial conspiracy theory posted</a></td>
+                                            <td>4chan, Reddit</td>
+                                            <td>Viral spread begins</td>
+                                        </tr>
+                                        <tr>
+                                            <td>November 2016</td>
+                                            <td>Theory spreads to mainstream social media</td>
+                                            <td>Twitter, Facebook</td>
+                                            <td>Millions of views</td>
+                                        </tr>
+                                        <tr>
+                                            <td>December 2016</td>
+                                            <td><a href="https://www.nytimes.com/2016/12/05/business/media/comet-ping-pong-pizza-shooting-fake-news-consequences.html?utm_source=chatgpt.com" target="_blank">Armed individual investigates restaurant</a></td>
+                                            <td>Physical location</td>
+                                            <td>Real-world violence</td>
+                                        </tr>
+                                        <tr>
+                                            <td>December 2016</td>
+                                            <td>Platform responses and fact-checking</td>
+                                            <td>Multiple platforms</td>
+                                            <td>Content removal, warning labels</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section 3: Effects on Society -->
+            <section id="effects-on-society" class="content-section">
+                <h2>Effects on Society</h2>
+                <p class="section-intro">False information creates far-reaching consequences that extend beyond individual beliefs, affecting entire communities and institutions.</p>
+
+                <div class="effects-overview">
+                    <table class="effects-table">
+                        <thead>
+                            <tr>
+                                <th>Sector</th>
+                                <th>Primary Effects</th>
+                                <th>Long-term Consequences</th>
+                                <th>Affected Groups</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Democratic Institutions</strong></td>
+                                <td>Reduced trust in elections, polarization</td>
+                                <td>Weakened democratic norms</td>
+                                <td>Voters, elected officials</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Public Health</strong></td>
+                                <td>Vaccine hesitancy; dangerous treatments</td>
+                                <td>Disease outbreaks; preventable deaths</td>
+                                <td>Vulnerable populations, children</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Social Cohesion</strong></td>
+                                <td>Community division; family conflicts</td>
+                                <td>Breakdown of shared reality</td>
+                                <td>All community members</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Economic Systems</strong></td>
+                                <td>Market manipulation; fraud</td>
+                                <td>Reduced economic stability</td>
+                                <td>Investors, consumers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Scientific Progress</strong></td>
+                                <td>Rejection of evidence-based policy</td>
+                                <td>Slowed scientific advancement</td>
+                                <td>Researchers, policymakers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="impact-metrics">
+                    <h3>Measurable Impacts</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h4>Trust in Media (Select Regions)</h4>
+                            <table class="metric-table">
+                                <thead>
+                                    <tr>
+                                        <th>Region / Country</th>
+                                        <th>Trust Level</th>
+                                        <th>Change / Trend</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>OECD countries (2023)</td>
+                                        <td>≈ 39% high or moderately high trust</td>
+                                        <td>↓ 44% report low or no trust 
+                                            (<a href="https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en/full-report/trust-and-information-integrity_49ce5100.html?utm_source=chatgpt.com" target="_blank">OECD Report</a>)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA (2024)</td>
+                                        <td>31%</td>
+                                        <td>Record-low in Gallup survey 
+                                            (<a href="https://news.gallup.com/poll/651977/americans-trust-media-remains-trend-low.aspx?utm_source=chatgpt.com" target="_blank">Gallup</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Vaccination Rates & Declines</h4>
+                            <table class="metric-table">
+                                <thead>
+                                    <tr>
+                                        <th>Region</th>
+                                        <th>2019 / Pre-pandemic Rate</th>
+                                        <th>Recent Rate (2023-2024)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Europe & Central Asia (MMR, DTP, Polio, Hep B)</td>
+                                        <td>≈ 92-95% for various doses</td>
+                                        <td>≈ 91-93%; ~1-2% decline 
+                                            (<a href="https://www.who.int/europe/news/item/15-07-2025-childhood-vaccination-rates-lag-in-europe---fueling-further-resurgence-of-measles-and-whooping-cough?utm_source=chatgpt.com" target="_blank">WHO Europe</a>)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Global DPT vaccine (3 doses)</td>
+                                        <td>Pre-pandemic ~90%+</td>
+                                        <td>~85% coverage in 2023 
+                                            (<a href="https://healthpolicy-watch.news/global-vaccination-rate-holds-steady-at-85-but-still-off-course-from-sdg-target/?utm_source=chatgpt.com" target="_blank">Health Policy Watch</a>)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Philippines – Measles vaccine coverage</td>
+                                        <td>~ 88%</td>
+                                        <td>Dropped to ~ 74% in 2019 → 31,056 cases & 415 deaths 
+                                            (<a href="https://en.wikipedia.org/wiki/2019_measles_outbreak_in_the_Philippines?utm_source=chatgpt.com" target="_blank">2019 PH Measles Outbreak</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section 4: How to Spot & Prevent -->
+            <section id="how-to-spot-prevent" class="content-section">
+                <h2>How to Spot & Prevent</h2>
+                <p class="section-intro">Developing critical thinking skills and using verification tools are essential for navigating today's information landscape.</p>
+
+                <div class="prevention-strategies">
+                    <h3>Detection Strategies</h3>
+                    <table class="detection-table">
+                        <thead>
+                            <tr>
+                                <th>Warning Sign</th>
+                                <th>What to Look For</th>
+                                <th>Verification Method</th>
+                                <th>Tools to Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Suspicious Headlines</td>
+                                <td>ALL CAPS, excessive punctuation, emotional language</td>
+                                <td>Check original source</td>
+                                <td>Reverse image search, fact-checkers</td>
+                            </tr>
+                            <tr>
+                                <td>Unverified Sources</td>
+                                <td>No author listed, unknown publication</td>
+                                <td>Research publication credibility</td>
+                                <td>Domain analysis, NewsGuard</td>
+                            </tr>
+                            <tr>
+                                <td>Outdated Information</td>
+                                <td>No date, old information presented as current</td>
+                                <td>Check publication dates</td>
+                                <td>Wayback Machine, Google search filters</td>
+                            </tr>
+                            <tr>
+                                <td>Manipulated Media</td>
+                                <td>Poor image quality, inconsistent shadows/lighting</td>
+                                <td>Technical analysis</td>
+                                <td>TinEye, InVID, forensic tools</td>
+                            </tr>
+                            <tr>
+                                <td>Logical Fallacies</td>
+                                <td>False dichotomies, ad hominem attacks</td>
+                                <td>Critical thinking analysis</td>
+                                <td>Logical fallacy references</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="verification-workflow">
+                    <h3>Verification Workflow</h3>
+                    <table class="workflow-table">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>Action</th>
+                                <th>Questions to Ask</th>
+                                <th>Time Required</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Initial Assessment</td>
+                                <td>Does this seem plausible? What's my gut reaction?</td>
+                                <td>30 seconds</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Source Check</td>
+                                <td>Who published this? Are they credible?</td>
+                                <td>2-3 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cross-Reference</td>
+                                <td>Are other sources reporting this?</td>
+                                <td>5-10 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Expert Opinion</td>
+                                <td>What do subject matter experts say?</td>
+                                <td>10-15 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Final Decision</td>
+                                <td>Should I share this? How confident am I?</td>
+                                <td>1-2 minutes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="prevention-tools">
+                    <h3>Essential Verification Tools</h3>
+                    <div class="tools-categories">
+                        <div class="tool-category">
+                            <h4>Image Verification</h4>
+                            <table class="tools-table">
+                                <thead>
+                                    <tr>
+                                        <th>Tool</th>
+                                        <th>Purpose</th>
+                                        <th>Accuracy / Strengths</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="https://images.google.com/" target="_blank">Google Reverse Image Search</a></td>
+                                        <td>Find image origins; detect copies, edited/cropped versions</td>
+                                        <td>Very high—fast results and large indexed dataset; identified many more “similar” and “original” image matches than some rivals in comparative analysis.  
+                                            (<a href="https://www.ijisrt.com/assets/upload/files/IJISRT22MAR398.pdf?utm_source=chatgpt.com" target="_blank">IJISRT 2022 study</a>)</td>
+                                        <td>Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://tineye.com/" target="_blank">TinEye</a></td>
+                                        <td>Track where an image has appeared; find exact matches, detect reuse</td>
+                                        <td>Very high precision for exact match detection; but smaller breadth of indexed content vs Google, sometimes fewer results especially for less common or heavily cropped content.  
+                                            (<a href="https://www.ijisrt.com/assets/upload/files/IJISRT22MAR398.pdf?utm_source=chatgpt.com" target="_blank">IJISRT 2022 study</a>; also <a href="https://reuse.diglib.org/toolkit/tineye-reverse-image-search/" target="_blank">DigLib/TinEye FAQ</a>)</td>
+                                        <td>Free / Premium (for more features, API access, batch matching)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.invid-project.eu/" target="_blank">InVID</a></td>
+                                        <td>Video + image verification; metadata extraction, frame-by-frame analysis</td>
+                                        <td>High—especially good for detecting manipulated video content or verifying video origin; used by fact-checkers in many high-profile investigations.  
+                                            (<a href="https://www.invid-project.eu/resources/use-cases/" target="_blank">InVID use cases</a>)</td>
+                                        <td>Free</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="tool-category">
+                            <h4>Fact-Checking Resources</h4>
+                            <table class="tools-table">
+                                <thead>
+                                    <tr>
+                                        <th>Organization</th>
+                                        <th>Specialization</th>
+                                        <th>Coverage</th>
+                                        <th>Language(s)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="https://www.snopes.com/" target="_blank">Snopes</a></td>
+                                        <td>General fact-checking: urban legends, viral claims, social media rumors, etc. (<a href="https://www.snopes.com/about/" target="_blank">About page</a>)</td>
+                                        <td>Global / US-centric</td>
+                                        <td>English</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.rappler.com/" target="_blank">Rappler Fact-Check</a></td>
+                                        <td>Claims in Philippine politics, government statements, social media-spread disinformation locally</td>
+                                        <td>Philippines (also with some regional/global topics)</td>
+                                        <td>English / Filipino</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://verafiles.org/fact-check" target="_blank">VERA Files</a></td>
+                                        <td>Local investigations, tracking flip-flops/misleading statements by public figures; misinformation tip-line and deep fact checks (<a href="https://verafiles.org/" target="_blank">VERA Files Home</a>)</td>
+                                        <td>Philippines</td>
+                                        <td>English / Filipino</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-practices">
+                    <h3>Best Practices for Information Sharing</h3>
+                    <table class="practices-table">
+                        <thead>
+                            <tr>
+                                <th>Practice</th>
+                                <th>Description</th>
+                                <th>Benefit</th>
+                                <th>Implementation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pause Before Sharing</td>
+                                <td>Take time to verify before forwarding</td>
+                                <td>Reduces spread of false information</td>
+                                <td>10-second rule: count to 10 before sharing</td>
+                            </tr>
+                            <tr>
+                                <td>Read Beyond Headlines</td>
+                                <td>Review full articles, not just headlines</td>
+                                <td>Better understanding of context</td>
+                                <td>Read at least first three paragraphs</td>
+                            </tr>
+                            <tr>
+                                <td>Check Multiple Sources</td>
+                                <td>Verify information across different outlets</td>
+                                <td>Increased confidence in accuracy</td>
+                                <td>Rule of three: check three sources</td>
+                            </tr>
+                            <tr>
+                                <td>Consider Source Motivation</td>
+                                <td>Think about why information was published</td>
+                                <td>Identify potential bias</td>
+                                <td>Ask "Who benefits from this narrative?"</td>
+                            </tr>
+                            <tr>
+                                <td>Acknowledge Uncertainty</td>
+                                <td>Be honest about what you don't know</td>
+                                <td>Maintains credibility</td>
+                                <td>Use phrases like "I'm not sure, but..."</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Developers</h4>
+                    <a href="https://github.com/jshmrcsb" target="_blank">Bautista, Josh Marcus</a>
+                    <a href="https://github.com/yowghyt" target="_blank">Beset, Sam Ryleigh</a>
+                    <a href="https://github.com/markangelo604" target="_blank">Domalanta, Mark Angelo</a>
+                    <a href="https://github.com/SanderO7" target="_blank">Lay-at, Chrysander</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#facts">Fast Facts</a>
+                    <a href="#mission">Our Mission</a>
+                    <a href="#articles">Articles</a>
+                    <a href="#resources">Resources</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <a href="#report">Report Misinformation</a>
+                    <a href="#volunteer">Volunteer</a>
+                    <a href="#submit-tip">Submit a Tip</a>
+                    <a href="#volunteer">Join</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>If you have any questions or inquiries, feel free to reach out to us at <a href="mailto:therealfeed@gmail.com">therealfeed@gmail.com</a></p>
+                </div>
+
+            </div>
+            <p>&copy; 2025 The Real Feed. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
