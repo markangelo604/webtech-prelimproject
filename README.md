@@ -109,8 +109,6 @@ For questions about this project:
 ## 📜 License & Usage
 This project is created solely for educational purposes as part of our Web Technologies Prelim Project. All content is intended for academic evaluation and learning purposes.
 
-**Academic Integrity Statement:** This work represents original development by the listed team members for IT 312 coursework evaluation.
-
 ---
 
 **© 2025 The Real Feed Team | Web Technologies IT 312 | Prelim Project**
