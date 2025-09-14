@@ -1,5 +1,7 @@
 # Misinformation & Disinformation Awareness Website  
 
+[click to open website here](https://markangelo604.github.io/webtech-prelimproject/)
+
 ## 📌 Project Overview  
 This repository contains our **Prelim Project for Web Technologies (IT 312)**.  
 Our project is a website dedicated to raising awareness about **misinformation and disinformation** in the digital world. It aims to educate users on how to identify false information, understand its negative impacts, and develop critical thinking skills for responsible online engagement.  
