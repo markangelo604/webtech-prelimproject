@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign & Awareness - The Real Feed</title>
+    <link rel="stylesheet" href="style/css/campaware.css">
+    <link rel="icon" type="image/png" href="style/icon/fantastic-4-logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <input type="checkbox" id="menu-toggle">
+    <nav class="nav-container">
+        <div class="nav-header">
+            <a href="index.html" class="logo">
+                <img src="style/icon/fantastic-4-logo.png" alt="The Real Feed Logo">
+                <strong>The Real Feed</strong>
+            </a>
+            
+            <div class="nav-controls">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="menu-overlay"></div>
+    <div class="nav-menu">
+        <div class="menu-content">
+            <h2 class="menu-title">Menu</h2>
+            
+            <div class="menu-search-container">
+                <input type="text" class="menu-search-input" placeholder="Search">
+                <button class="menu-search-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="submenu-1" class="submenu-checkbox">
+                    <label for="submenu-1" class="submenu-toggle">Learn More</label>
+                    <ul class="submenu">
+                        <li><a href="learn-more.html#misinformation-disinformation">Misinformation vs Disinformation</a></li>
+                        <li><a href="learn-more.html#real-world-examples">Real-World Examples</a></li>
+                        <li><a href="learn-more.html#effects-on-society">Effects on Society</a></li>
+                        <li><a href="learn-more.html#how-to-spot-prevent">How to Spot & Prevent</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="submenu-2" class="submenu-checkbox">
+                    <label for="submenu-2" class="submenu-toggle">Community</label>
+                    <ul class="submenu">
+                        <li><a href="latest-news.html">Latest News</a></li>
+                        <li><a href="#">Campaigns & Awareness</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Campaign & Awareness</h1>
+                <p class="hero-subtitle">Join our mission to combat misinformation through community-driven campaigns and awareness initiatives</p>
+            </div>
+        </section>
+
+        <!-- Active Campaigns Section -->
+        <section class="campaigns">
+            <div class="campaigns-header">
+                <h2>Active Campaigns</h2>
+                <p>Discover ongoing initiatives making a real difference in the fight against misinformation</p>
+            </div>
+            
+            <div class="campaigns-grid">
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="campaign-overlay">
+                            <div class="campaign-badge">Active</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Digital Literacy for All</h3>
+                        <p>Empowering communities with essential digital literacy skills to navigate the modern information landscape safely and confidently.</p>
+                        <div class="campaign-meta">
+                            <div class="campaign-date">March 2025</div>
+                            <div class="campaign-category">Education</div>
+                        </div>
+                        <a href="#" class="campaign-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="campaign-overlay">
+                            <div class="campaign-badge">Ongoing</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Social Media Truth Initiative</h3>
+                        <p>Teaching users how to identify and combat misinformation on social media platforms through practical tools and strategies.</p>
+                        <div class="campaign-meta">
+                            <div class="campaign-date">January 2025</div>
+                            <div class="campaign-category">Social Media</div>
+                        </div>
+                        <a href="#" class="campaign-link">Join Campaign</a>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="campaign-overlay">
+                            <div class="campaign-badge">New</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Community Truth Champions</h3>
+                        <p>Training local leaders and volunteers to become fact-checking ambassadors in their communities and neighborhoods.</p>
+                        <div class="campaign-meta">
+                            <div class="campaign-date">April 2025</div>
+                            <div class="campaign-category">Community</div>
+                        </div>
+                        <a href="#" class="campaign-link">Volunteer Now</a>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="campaign-overlay">
+                            <div class="campaign-badge">Featured</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Youth Media Literacy Program</h3>
+                        <p>Engaging young people with interactive workshops and activities to develop critical thinking skills for the digital age.</p>
+                        <div class="campaign-meta">
+                            <div class="campaign-date">February 2025</div>
+                            <div class="campaign-category">Youth</div>
+                        </div>
+                        <a href="#" class="campaign-link">Get Involved</a>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="campaign-overlay">
+                            <div class="campaign-badge">Impact</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Senior Digital Safety</h3>
+                        <p>Protecting our elderly population from online scams and misinformation through tailored educational resources and support.</p>
+                        <div class="campaign-meta">
+                            <div class="campaign-date">May 2025</div>
+                            <div class="campaign-category">Seniors</div>
+                        </div>
+                        <a href="#" class="campaign-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="campaign-overlay">
+                            <div class="campaign-badge">Global</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>International Truth Network</h3>
+                        <p>Connecting fact-checkers and truth advocates worldwide to share resources and collaborate on combating global misinformation.</p>
+                        <div class="campaign-meta">
+                            <div class="campaign-date">Ongoing</div>
+                            <div class="campaign-category">International</div>
+                        </div>
+                        <a href="#" class="campaign-link">Connect Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Awareness Matters Section -->
+        <section class="awareness-importance">
+            <div class="awareness-header">
+                <h2>Why Awareness Matters</h2>
+                <p>Understanding the critical importance of information literacy in our digital society</p>
+            </div>
+            
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <div class="importance-icon">🧠</div>
+                    <h3>Critical Thinking Development</h3>
+                    <p>Awareness campaigns help individuals develop essential critical thinking skills needed to evaluate information sources, question assumptions, and make informed decisions in an increasingly complex digital landscape.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="importance-icon">🛡️</div>
+                    <h3>Protection from Manipulation</h3>
+                    <p>By raising awareness about misinformation tactics, we empower people to recognize and resist attempts to manipulate their thoughts, emotions, and behaviors through false or misleading information.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="importance-icon">🏛️</div>
+                    <h3>Democracy Preservation</h3>
+                    <p>Informed citizens are the foundation of healthy democracies. Awareness initiatives help maintain the integrity of democratic processes by ensuring voters have access to accurate information.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="importance-icon">🌐</div>
+                    <h3>Social Cohesion</h3>
+                    <p>Misinformation often divides communities and creates social tensions. Awareness programs help build bridges, promote understanding, and foster unity based on shared facts and common ground.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="importance-icon">💡</div>
+                    <h3>Empowered Decision Making</h3>
+                    <p>When people are aware of how to identify reliable information, they make better decisions about their health, finances, relationships, and civic participation, leading to improved personal and community outcomes.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="importance-icon">🔄</div>
+                    <h3>Breaking the Cycle</h3>
+                    <p>Awareness campaigns create a ripple effect. Educated individuals become advocates who share their knowledge with family, friends, and colleagues, exponentially expanding the reach of truth and accuracy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Developers</h4>
+                <a href="#">Bautista, Josh Marcus</a>
+                <a href="#">Beset, Sam Ryleigh</a>
+                <a href="https://github.com/markangelo604">Domalanta, Mark Angelo</a>
+                <a href="#">Lay-at, Chrysander</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#facts">Fast Facts</a>
+                <a href="#mission">Our Mission</a>
+                <a href="#articles">Articles</a>
+                <a href="#resources">Resources</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Get Involved</h4>
+                <a href="#report">Report Misinformation</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#submit-tip">Submit a Tip</a>
+                <a href="#volunteer">Join</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>If you have any questions or inquiries, feel free to reach out to us at <a href="mailto:therealfeed@gmail.com">therealfeed@gmail.com</a></p>
+            </div>
+        </div>
+        <p>&copy; 2025 The Real Feed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
