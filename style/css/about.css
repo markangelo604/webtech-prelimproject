@@ -935,7 +935,6 @@ footer {
     line-height: 1.6;
 }
 
-/* Mobile - 430px and below */
 @media screen and (max-width: 430px) {
     .desktop-img {
         opacity: 0;
