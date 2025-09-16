@@ -914,3 +914,9 @@ footer {
 .footer-section p {
     line-height: 1.6;
 }
+
+@media screen and (max-width: 430px) {
+
+    
+    
+}
