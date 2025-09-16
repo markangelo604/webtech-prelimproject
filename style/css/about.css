@@ -736,20 +736,27 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
 }
-
-/* Team Section */
-.team{
+/* Team member Styles */
+.team {
     padding: 4rem 0;
     background: #f8f9fa;
 }
 
-.team-grid{
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #3d4449;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-.team-member{
+.team-member {
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -757,55 +764,68 @@ body {
     transition: all 0.3s ease;
 }
 
-.team-member:hover{
+.team-member:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .member-photo {
     width: 100%;
-    height: 200px;
-    background: linear-gradient(135deg, #f56a6a, #ff7b7b);
+    height: 250px;
+    overflow: hidden;
     position: relative;
-
 }
 
-.memebr-photo::after{
-    content: '';
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    background: white;
-    border-radius: 5px;
-    opacity: 0.8;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.member-info{
+.desktop-img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+
+.mobile-img {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+
+.member-info {
     padding: 1.5rem;
 }
 
-.member-info h3{
+.member-info h3 {
     font-size: 1.3rem;
     color: #3d4449;
-    margin-bottom: 0.rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
-.member-role{
+.member-role {
     color: #f56a6a;
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 0.95rem;
 }
 
-.member-bio{
+.member-bio {
     color: #6c757d;
     line-height: 1.6;
     font-size: 0.9rem;
 }
+
 
 /* CTA Section */
 .cta{
@@ -915,8 +935,55 @@ footer {
     line-height: 1.6;
 }
 
+/* Mobile - 430px and below */
 @media screen and (max-width: 430px) {
-
+    .desktop-img {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+    }
     
+    .mobile-img {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+    }
     
+    .team {
+        padding: 2rem 0;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .member-photo {
+        height: 200px;
+    }
+    
+    .member-info {
+        padding: 1rem;
+    }
+    
+    .member-info h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .member-role {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .member-bio {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
 }
