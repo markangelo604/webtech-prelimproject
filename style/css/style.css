@@ -807,7 +807,7 @@ p {
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
-    opacity: 0.8;
+    opacity: 1; /* Changed from 0.8 to 1 for full opacity */
 }
 
 .campaign-card:hover .campaign-image img{
@@ -820,7 +820,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(245, 106, 106, 0.8) 0%, rgba(229, 85, 85, 0.8) 100%);
+    background: transparent; /* Removed the orange gradient overlay */
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
