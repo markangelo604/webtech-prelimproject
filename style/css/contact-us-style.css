@@ -1042,6 +1042,127 @@ footer {
         gap: 0.5rem;
     }
 
+        .submenu-toggle {
+        display: block;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        background: rgba(255, 234, 167, 0.2);
+        color: #ffeaa7; 
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 0.075em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 234, 167, 0.3);
+        border-radius: 15px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+        width: 100%;
+        text-align: left;
+        font-family: inherit;
+    }
+
+    .submenu-toggle::after {
+        content: '+';
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        color: #ffeaa7;
+        font-weight: bold;
+    }
+
+    .submenu-checkbox:checked + .submenu-toggle::after {
+        transform: translateY(-50%) rotate(45deg);
+        color: #2d3436;
+    }
+
+    .submenu-checkbox:checked + .submenu-toggle {
+        background: rgba(255, 234, 167, 0.4);
+        color: #2d3436;
+        text-shadow: none;
+    }
+
+    .submenu {
+        display: none;
+        margin: 0.5rem 0 1rem 0;
+        padding: 0;
+        list-style: none;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.3s ease;
+        border: 2px solid rgba(255, 234, 167, 0.2);
+    }
+
+    .submenu-checkbox:checked + .submenu-toggle + .submenu {
+        display: block;
+        max-height: 300px;
+        padding: 1rem;
+        animation: slideDownMobile 0.3s ease;
+    }
+
+    @keyframes slideDownMobile {
+        from {
+            opacity: 0;
+            max-height: 0;
+            padding: 0 1rem;
+        }
+        to {
+            opacity: 1;
+            max-height: 300px;
+            padding: 1rem;
+        }
+    }
+
+    .submenu li {
+        margin: 0.25rem 0;
+    }
+
+    .submenu a {
+        font-size: 0.9rem;
+        color: #ffeaa7 !important; 
+        text-transform: none;
+        letter-spacing: normal;
+        padding: 0.75rem 1rem;
+        margin: 0;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+        background: rgba(45, 52, 54, 0.3);
+        border: 1px solid rgba(255, 234, 167, 0.2);
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        display: block;
+    }
+
+    .has-submenu {
+        position: relative;
+        margin-bottom: 0.5rem;
+    }
+
+    .submenu-checkbox:checked + .submenu-toggle {
+        margin-bottom: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .menu-list > li {
+        border-top: 1px solid rgba(255, 234, 167, 0.2);
+        margin: 0.5rem 0;
+        padding: 0.5rem 0 0 0;
+    }
+
+    .menu-list > li:first-child {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
     .contact-hero {
         background:linear-gradient(135deg, #6c5ce7, #00b894, #feca57);
         background-size: 200% 200%;
