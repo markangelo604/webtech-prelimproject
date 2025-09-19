@@ -1550,7 +1550,7 @@ footer {
         font-weight: 600;
     }
 
-    .footer {
+    footer {
         background: linear-gradient(135deg, #2d3436, #636e72);
         background-size: 200% 200%;
         animation: footerColors 10s ease-in-out infinite;
