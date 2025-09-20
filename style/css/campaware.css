@@ -599,7 +599,6 @@ p {
     position: relative;
     height: 220px;
     overflow: hidden;
-    background: linear-gradient(45deg, #f56a6a, #e55555);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -623,7 +622,6 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(245, 106, 106, 0.8) 0%, rgba(229, 85, 85, 0.8) 100%);
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
