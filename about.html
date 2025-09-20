@@ -1,404 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - The Real Feed</title>
-    <link rel="stylesheet" href="style/css/about.css">
-    <link rel="icon" type="image/png" href="style/icon/fantastic-4-logo.png">
-</head>
-<body>
-<!-- Navigation -->
-    <input type="checkbox" id="menu-toggle">
+    <link rel="stylesheet" href="style/css/about.css" />
+    <link rel="icon" type="image/png" href="style/icon/fantastic-4-logo.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <input type="checkbox" id="menu-toggle" />
     <nav class="nav-container">
-            <div class="nav-header">
-                <a href="index.html" class="logo">
-                    <img src="style/icon/fantastic-4-logo.png" alt="The Real Feed Logo">
-                    <strong>The Real Feed</strong>
-                </a>
-                
-                <div class="nav-controls">
-                    <div class="search-container">
-                        <input type="text" class="search-input" placeholder="Search...">
-                        <button class="search-button">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="m21 21-4.35-4.35"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    <label for="menu-toggle" class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                </div>
-            </div>
+      <div class="nav-header">
+        <a href="index.html" class="logo">
+          <img src="style/icon/fantastic-4-logo.png" alt="The Real Feed Logo" />
+          <strong>The Real Feed</strong>
+        </a>
+
+        <div class="nav-controls">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <button class="search-button">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+          </div>
+
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </div>
     </nav>
     <div class="menu-overlay"></div>
     <div class="nav-menu">
-            <div class="menu-content">
-                <h2 class="menu-title">Menu</h2>
-                
-                <div class="menu-search-container">
-                    <input type="text" class="menu-search-input" placeholder="Search">
-                    <button class="menu-search-button">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </button>
-                </div>
-                <ul class="menu-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="has-submenu">
-                        <input type="checkbox" id="submenu-1" class="submenu-checkbox">
-                        <label for="submenu-1" class="submenu-toggle">Learn More</label>
-                        <ul class="submenu">
-                            <li><a href="learn-more.html#misinformation-disinformation">Misinformation vs Disinformation</a></li>
-                            <li><a href="learn-more.html#real-world-examples">Real-World Examples</a></li>
-                            <li><a href="learn-more.html#effects-on-society">Effects on Society</a></li>
-                            <li><a href="learn-more.html#how-to-spot-prevent">How to Spot & Prevent</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <input type="checkbox" id="submenu-2" class="submenu-checkbox">
-                        <label for="submenu-2" class="submenu-toggle">Community</label>
-                        <ul class="submenu">
-                            <li><a href="latest-news.html">Latest News</a></li>
-                            <li><a href="campaware.html">Campaigns & Awareness</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                </ul>
-            </div>
-    </div>
-</div>
+      <div class="menu-content">
+        <h2 class="menu-title">Menu</h2>
 
-<!-- Main Content -->
-<main class="main-content">
-    <!-- Hero Section -->
-     <section class="hero">
+        <div class="menu-search-container">
+          <input type="text" class="menu-search-input" placeholder="Search" />
+          <button class="menu-search-button">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-submenu">
+            <input type="checkbox" id="submenu-1" class="submenu-checkbox" />
+            <label for="submenu-1" class="submenu-toggle">Learn More</label>
+            <ul class="submenu">
+              <li>
+                <a href="learn-more.html#misinformation-disinformation"
+                  >Misinformation vs Disinformation</a
+                >
+              </li>
+              <li>
+                <a href="learn-more.html#real-world-examples"
+                  >Real-World Examples</a
+                >
+              </li>
+              <li>
+                <a href="learn-more.html#effects-on-society"
+                  >Effects on Society</a
+                >
+              </li>
+              <li>
+                <a href="learn-more.html#how-to-spot-prevent"
+                  >How to Spot & Prevent</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <input type="checkbox" id="submenu-2" class="submenu-checkbox" />
+            <label for="submenu-2" class="submenu-toggle">Community</label>
+            <ul class="submenu">
+              <li><a href="latest-news.html">Latest News</a></li>
+              <li><a href="campaware.html">Campaigns & Awareness</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
         <header class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">About <strong>The Real Feed</strong></h1>
-                <p class="hero-subtitle">Empowering communities with truth, transparency, and reliable information in the digital age.</p>
-            </div>
+          <div class="hero-content">
+            <h1 class="hero-title">About <strong>The Real Feed</strong></h1>
+            <p class="hero-subtitle">
+              Empowering communities with truth, transparency, and reliable
+              information in the digital age.
+            </p>
+          </div>
         </header>
-     </section>
+      </section>
 
-<!-- Mission Content -->
-<section class="mission">
+      <!-- Mission Content -->
+      <section class="mission">
         <div class="container">
-            <div class="mission-content">
-                <div class="mission-text">
-                    <h2>Our Mission</h2>
-                    <p>In an era where information travels faster than ever, The Real Feed stands as a beacon of truth and reliability. We are dedicated to combating misinformation and disinformation by providing accurate, verified, and trustworthy content to our community.</p>
-                    <p>Our platform serves as a comprehensive resource for understanding the complexities of modern information warfare and equips individuals with the tools they need to navigate the digital landscape safely and confidently.</p>
-                </div>
-
-                <div class="mission-visual">
-                    <div class="icon-grid">
-                        <div class="icon-item">
-                            <div class="icon truth-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 3l8 4v5c0 5-3.5 9-8 9s-8-4-8-9V7l8-4z"></path>
-                                    <path d="M9 12l2 2 4-4"></path>
-                                </svg>
-                            </div>
-                            <span>Truth</span>
-                        </div>
-
-                        <div class="icon-item">
-                            <div class="icon transparency-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                            </div>
-                            <span>Transparency</span>
-                        </div>
-
-                        <div class="icon-item">
-                            <div class="icon community-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <span>Community</span>
-                        </div>
-
-                        <div class="icon-item">
-                            <div class="icon education-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                    <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20v14"></path>
-                                    <path d="M20 7a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 7.5V19"></path>
-                                </svg>
-                            </div>
-                            <span>Education</span>
-                        </div>
-                    </div>
-                </div>
+          <div class="mission-content">
+            <div class="mission-text">
+              <h2>Our Mission</h2>
+              <p>
+                In an era where information travels faster than ever, The Real
+                Feed stands as a beacon of truth and reliability. We are
+                dedicated to combating misinformation and disinformation by
+                providing accurate, verified, and trustworthy content to our
+                community.
+              </p>
+              <p>
+                Our platform serves as a comprehensive resource for
+                understanding the complexities of modern information warfare and
+                equips individuals with the tools they need to navigate the
+                digital landscape safely and confidently.
+              </p>
             </div>
+
+            <div class="mission-visual">
+              <div class="icon-grid">
+                <div class="icon-item">
+                  <div class="icon truth-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M12 3l8 4v5c0 5-3.5 9-8 9s-8-4-8-9V7l8-4z"
+                      ></path>
+                      <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <span>Truth</span>
+                </div>
+
+                <div class="icon-item">
+                  <div class="icon transparency-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                      ></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </div>
+                  <span>Transparency</span>
+                </div>
+
+                <div class="icon-item">
+                  <div class="icon community-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <span>Community</span>
+                </div>
+
+                <div class="icon-item">
+                  <div class="icon education-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20v14"></path>
+                      <path
+                        d="M20 7a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 7.5V19"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Education</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-</section>
+      </section>
 
-<!-- Values Section -->
-<section class="values">
-    <div class="container">
-        <h2 class="section-title">Our Core Values</h2>
-        <div class="values-grid">
+      <!-- Values Section -->
+      <section class="values">
+        <div class="container">
+          <h2 class="section-title">Our Core Values</h2>
+          <div class="values-grid">
             <div class="value-card">
-                <div class="value-header">
-                    <div class="value-icon accuracy-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                    </div>
-                    <h3>Accuracy</h3>
+              <div class="value-header">
+                <div class="value-icon accuracy-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
                 </div>
-                <p>Every piece of information we share is thoroughly fact-checked and verified through multiple reliable sources before publication.</p>                
+                <h3>Accuracy</h3>
+              </div>
+              <p>
+                Every piece of information we share is thoroughly fact-checked
+                and verified through multiple reliable sources before
+                publication.
+              </p>
             </div>
 
             <div class="value-card">
-                <div class="value-header">
-                    <div class="value-icon accessibility-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="16" x2="12" y2="22"></line>
-                            <line x1="12" y1="8" x2="12" y2="2"></line>
-                            <line x1="8" y1="12" x2="2" y2="12"></line>
-                            <line x1="16" y1="12" x2="22" y2="12"></line>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3>Accessibility</h3>
+              <div class="value-header">
+                <div class="value-icon accessibility-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="22"></line>
+                    <line x1="12" y1="8" x2="12" y2="2"></line>
+                    <line x1="8" y1="12" x2="2" y2="12"></line>
+                    <line x1="16" y1="12" x2="22" y2="12"></line>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
                 </div>
-                <p>Complex information is presented in clear, understandable formats that serve diverse audiences and learning styles.</p>                
+                <h3>Accessibility</h3>
+              </div>
+              <p>
+                Complex information is presented in clear, understandable
+                formats that serve diverse audiences and learning styles.
+              </p>
             </div>
 
             <div class="value-card">
-                <div class="value-header">
-                    <div class="value-icon integrity-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 3l8 4v5c0 5-3.5 9-8 9s-8-4-8-9V7l8-4z"></path>
-                            <path d="M9 12l2 2 4-4"></path>
-                        </svg>
-                    </div>
-                    <h3>Integrity</h3>
+              <div class="value-header">
+                <div class="value-icon integrity-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 3l8 4v5c0 5-3.5 9-8 9s-8-4-8-9V7l8-4z"></path>
+                    <path d="M9 12l2 2 4-4"></path>
+                  </svg>
                 </div>
-                <p>We maintain the highest ethical standards in journalism and information sharing, always prioritizing truth over sensationalism.</p>                
-            </div> 
+                <h3>Integrity</h3>
+              </div>
+              <p>
+                We maintain the highest ethical standards in journalism and
+                information sharing, always prioritizing truth over
+                sensationalism.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- Story Section -->
-<section class="story">
-    <div class="container">
-        <div class="story-content">
+      <!-- Story Section -->
+      <section class="story">
+        <div class="container">
+          <div class="story-content">
             <div class="story-text">
-                <h2>Our Story</h2>
-                <p>The Real Feed was born from a collective concern about the rapid spread of false information and its impact on society. Founded by a team of journalists, educators, and technology professionals, our platform emerged as a response to the growing need for reliable information sources.</p>
-                <p>What started as a small initiative to fact-check local news has evolved into a comprehensive platform that serves thousands of users daily. We've built partnerships with leading fact-checking organizations and educational institutions to ensure our content meets the highest standards of accuracy and reliability.</p>
-                <p>Today, The Real Feed continues to grow, adapting to new challenges in the information landscape while maintaining our commitment to truth and transparency.</p>
+              <h2>Our Story</h2>
+              <p>
+                The Real Feed was born from a collective concern about the rapid
+                spread of false information and its impact on society. Founded
+                by a team of journalists, educators, and technology
+                professionals, our platform emerged as a response to the growing
+                need for reliable information sources.
+              </p>
+              <p>
+                What started as a small initiative to fact-check local news has
+                evolved into a comprehensive platform that serves thousands of
+                users daily. We've built partnerships with leading fact-checking
+                organizations and educational institutions to ensure our content
+                meets the highest standards of accuracy and reliability.
+              </p>
+              <p>
+                Today, The Real Feed continues to grow, adapting to new
+                challenges in the information landscape while maintaining our
+                commitment to truth and transparency.
+              </p>
             </div>
 
             <div class="story-timeLine">
-                <div class="timeLine-item">
-                    <div class="timeLine-marker">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
-                             stroke="currentColor" stroke-width="2">
-                            <path d="M4 3v18"></path>
-                            <path d="M4 3h15l-3 5 3 5H4"></path>
-                        </svg>
-                    </div>
-                    <div class="timeLine-content">
-                        <h4>2022</h4>
-                        <p>Platform founded with focus on local fact-checking</p>
-                    </div>
+              <div class="timeLine-item">
+                <div class="timeLine-marker">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M4 3v18"></path>
+                    <path d="M4 3h15l-3 5 3 5H4"></path>
+                  </svg>
                 </div>
+                <div class="timeLine-content">
+                  <h4>2022</h4>
+                  <p>Platform founded with focus on local fact-checking</p>
+                </div>
+              </div>
 
-                <div class="timeLine-item">
-                    <div class="timeLine-marker">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
-                             stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
-                            <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
-                        </svg>
-                    </div>
-                    <div class="timeLine-content">
-                        <h4>2023</h4>
-                        <p>Expanded to cover national and international news</p>
-                    </div>
+              <div class="timeLine-item">
+                <div class="timeLine-marker">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+                    <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+                  </svg>
                 </div>
+                <div class="timeLine-content">
+                  <h4>2023</h4>
+                  <p>Expanded to cover national and international news</p>
+                </div>
+              </div>
 
-                <div class="timeLine-item">
-                    <div class="timeLine-marker">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
-                             stroke="currentColor" stroke-width="2">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                            <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20v14"></path>
-                        </svg>
-                    </div>
-                    <div class="timeLine-content">
-                        <h4>2024</h4>
-                        <p>Launched educational resources and community features</p>
-                    </div>
+              <div class="timeLine-item">
+                <div class="timeLine-marker">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20v14"></path>
+                  </svg>
                 </div>
+                <div class="timeLine-content">
+                  <h4>2024</h4>
+                  <p>Launched educational resources and community features</p>
+                </div>
+              </div>
 
-                <div class="timeLine-item">
-                    <div class="timeLine-marker">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
-                             stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <div class="timeLine-content">
-                        <h4>2025</h4>
-                        <p>Reached 100,000+ community membersg</p>
-                    </div>
+              <div class="timeLine-item">
+                <div class="timeLine-marker">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
                 </div>
+                <div class="timeLine-content">
+                  <h4>2025</h4>
+                  <p>Reached 100,000+ community membersg</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- Team Section -->
-<section class="team">
-    <div class="container">
-        <h2 class="section-title">Meet Our Team</h2>
-        <div class="team-grid">
-            
+      <!-- Team Section -->
+      <section class="team">
+        <div class="container">
+          <h2 class="section-title">Meet Our Team</h2>
+          <div class="team-grid">
             <!-- Josh Marcus Bautista -->
             <div class="team-member">
-                <div class="member-photo">
-                    <img class="desktop-img" src="style/img/joshpic.jpg" alt="Josh Marcus Bautista">
-                    <img class="mobile-img" src="style/img/pinoy.jpg" alt="Josh Marcus Bautista">
-                </div>
-                <div class="member-info">
-                    <h3>Josh Marcus Bautista</h3>
-                    <p class="member-role">Project Manager & Lead Developer</p>
-                    <p class="member-bio">Former investigative journalist with 15+ years experience in digital media and fact-checking.</p>
-                </div>
+              <div class="member-photo">
+                <img
+                  class="desktop-img"
+                  src="style/img/joshpic.jpg"
+                  alt="Josh Marcus Bautista"
+                />
+                <img
+                  class="mobile-img"
+                  src="style/img/pinoy.jpg"
+                  alt="Josh Marcus Bautista"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Josh Marcus Bautista</h3>
+                <p class="member-role">Project Manager & Lead Developer</p>
+                <p class="member-bio">
+                  Former investigative journalist with 15+ years experience in
+                  digital media and fact-checking.
+                </p>
+              </div>
             </div>
 
             <!-- Mark Angelo Domalanta -->
             <div class="team-member">
-                <div class="member-photo">
-                    <img class="desktop-img" src="style/img/markpic.jpg" alt="Mark Angelo Domalanta">
-                    <img class="mobile-img" src="style/img/pinoy2.jpg" alt="Mark Angelo Domalanta">
-                </div>
-                <div class="member-info">
-                    <h3>Mark Angelo Domalanta</h3>
-                    <p class="member-role">Technology Director</p>
-                    <p class="member-bio">Software engineer specializing in information verification systems and digital literacy tools.</p>
-                </div>
+              <div class="member-photo">
+                <img
+                  class="desktop-img"
+                  src="style/img/markpic.jpg"
+                  alt="Mark Angelo Domalanta"
+                />
+                <img
+                  class="mobile-img"
+                  src="style/img/pinoy2.jpg"
+                  alt="Mark Angelo Domalanta"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Mark Angelo Domalanta</h3>
+                <p class="member-role">Technology Director</p>
+                <p class="member-bio">
+                  Software engineer specializing in information verification
+                  systems and digital literacy tools.
+                </p>
+              </div>
             </div>
 
             <!-- Sam Ryleigh Beset -->
             <div class="team-member">
-                <div class="member-photo">
-                    <img class="desktop-img" src="style/img/sampic.png" alt="Sam Ryleigh Beset">
-                    <img class="mobile-img" src="style/img/pinoy3.jpg" alt="Sam Ryleigh Beset">
-                </div>
-                <div class="member-info">
-                    <h3>Sam Ryleigh Beset</h3>
-                    <p class="member-role">Community Manager</p>
-                    <p class="member-bio">Community building specialist focused on fostering informed discussions and user engagement.</p>
-                </div>
+              <div class="member-photo">
+                <img
+                  class="desktop-img"
+                  src="style/img/sampic.png"
+                  alt="Sam Ryleigh Beset"
+                />
+                <img
+                  class="mobile-img"
+                  src="style/img/pinoy3.jpg"
+                  alt="Sam Ryleigh Beset"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Sam Ryleigh Beset</h3>
+                <p class="member-role">Community Manager</p>
+                <p class="member-bio">
+                  Community building specialist focused on fostering informed
+                  discussions and user engagement.
+                </p>
+              </div>
             </div>
 
             <!-- Chrysander Lay-at -->
             <div class="team-member">
-                <div class="member-photo">
-                    <img class="desktop-img" src="style/img/sanderpic.jpg" alt="Chrysander Lay-at">
-                    <img class="mobile-img" src="style/img/chinese.png" alt="Chrysander Lay-at">
-                </div>
-                <div class="member-info">
-                    <h3>Chrysander Lay-at</h3>
-                    <p class="member-role">Research Specialist</p>
-                    <p class="member-bio">Research analyst specializing in information verification and digital content analysis.</p>
-                </div>
+              <div class="member-photo">
+                <img
+                  class="desktop-img"
+                  src="style/img/sanderpic.jpg"
+                  alt="Chrysander Lay-at"
+                />
+                <img
+                  class="mobile-img"
+                  src="style/img/chinese.png"
+                  alt="Chrysander Lay-at"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Chrysander Lay-at</h3>
+                <p class="member-role">Research Specialist</p>
+                <p class="member-bio">
+                  Research analyst specializing in information verification and
+                  digital content analysis.
+                </p>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- CTA Section -->
-<section class="cta">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Join Our Mission</h2>
-            <p>Be part of the solution in the fight against misinformation. Together, we can build a more informed and connected community.</p>
-                <div class="cta-buttons">
-                    <a href="contact-us.html" class="btn btn-primary">Get Involved</a>
-                    <a href="learn-more.html" class="btn btn-secondary">Learn More</a>
-                </div>
-        </div>
-    </div>
-</section>
-
-
-</main>
-
-
-
-
-    
-
-
-<!-- Footer -->
-<footer>
+      <!-- CTA Section -->
+      <section class="cta">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Developers</h4>
-                    <a href="https://github.com/jshmrcsb" target="_blank">Bautista, Josh Marcus</a>
-                    <a href="https://github.com/yowghyt" target="_blank">Beset, Sam Ryleigh</a>
-                    <a href="https://github.com/markangelo604" target="_blank">Domalanta, Mark Angelo</a>
-                    <a href="https://github.com/SanderO7" target="_blank">Lay-at, Chrysander</a>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="#home">Home</a>
-                    <a href="#facts">Fast Facts</a>
-                    <a href="#mission">Our Mission</a>
-                    <a href="#articles">Articles</a>
-                    <a href="#resources">Resources</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Get Involved</h4>
-                    <a href="#report">Report Misinformation</a>
-                    <a href="#volunteer">Volunteer</a>
-                    <a href="#submit-tip">Submit a Tip</a>
-                    <a href="#volunteer">Join</a>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <p>If you have any questions or inquiries, feel free to reach out to us at <a href="mailto:therealfeed@gmail.com">therealfeed@gmail.com</a></p>
-                </div>
+          <div class="cta-content">
+            <h2>Join Our Mission</h2>
+            <p>
+              Be part of the solution in the fight against misinformation.
+              Together, we can build a more informed and connected community.
+            </p>
+            <div class="cta-buttons">
+              <a href="contact-us.html" class="btn btn-primary">Get Involved</a>
+              <a href="learn-more.html" class="btn btn-secondary">Learn More</a>
             </div>
-            <p>&copy; 2025 The Real Feed. All rights reserved.</p>
+          </div>
         </div>
-</footer>
-</body>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Developers</h4>
+            <a href="https://github.com/jshmrcsb" target="_blank"
+              >Bautista, Josh Marcus</a
+            >
+            <a href="https://github.com/yowghyt" target="_blank"
+              >Beset, Sam Ryleigh</a
+            >
+            <a href="https://github.com/markangelo604" target="_blank"
+              >Domalanta, Mark Angelo</a
+            >
+            <a href="https://github.com/SanderO7" target="_blank"
+              >Lay-at, Chrysander</a
+            >
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#facts">Fast Facts</a>
+            <a href="#mission">Our Mission</a>
+            <a href="#articles">Articles</a>
+            <a href="#resources">Resources</a>
+          </div>
+
+          <div class="footer-section">
+            <h4>Get Involved</h4>
+            <a href="#report">Report Misinformation</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#submit-tip">Submit a Tip</a>
+            <a href="#volunteer">Join</a>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>
+              If you have any questions or inquiries, feel free to reach out to
+              us at
+              <a href="mailto:therealfeed@gmail.com">therealfeed@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <p>&copy; 2025 The Real Feed. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
