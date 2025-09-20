@@ -1401,7 +1401,7 @@ footer {
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
-        border-radius: 10;
+        border-radius: 10px;
     }
 
     thead, tbody, tr, th, td {
